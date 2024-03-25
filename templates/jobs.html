@@ -1,0 +1,32 @@
+{% extends 'base.html'%}
+
+{%block title%}
+jobs_page
+{%endblock%}
+
+{%block content%}
+<h1>jobs Page</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">TITLE</th>
+            <th scope="col">LOCATION</th>
+            <th scope="col">SALARY</th>
+            <th scope="col">CURRENCY</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in data %}
+        <tr>
+            
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+            <td>{{ row[4] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{%endblock%}
