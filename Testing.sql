@@ -8,6 +8,16 @@ create table jobs (
 	currency varchar(10),
     primary key (id)
 );
+create table user(
+	id int not null unique,
+    username varchar(250) not null unique,
+    email varchar(500) not null unique,
+    password varchar(100) not null,
+    primary key (id)
+);
+select * from user;
 insert into jobs (id, title, location)
 values ('2' , 'Web Dev', 'Jaipur');
+insert into jobs (id, title, location)
+values	('3' , 'Web Dev', 'Ramnagar');
 select * from jobs;
