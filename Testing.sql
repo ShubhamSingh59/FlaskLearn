@@ -21,3 +21,5 @@ values ('2' , 'Web Dev', 'Jaipur');
 insert into jobs (id, title, location)
 values	('3' , 'Web Dev', 'Ramnagar');
 select * from jobs;
+
+select @@hostname;
